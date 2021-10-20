@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9be6d5f25657f3197250ff758b6e6c23",
+    "content-hash": "97cb8a0ba7ad12c700441c705ffcc5b9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -500,6 +500,60 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "endyjasmi/cuid",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endyjasmi/cuid.git",
+                "reference": "a425a1071cb07bafc9355e85dd288b5b5d1245f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endyjasmi/cuid/zipball/a425a1071cb07bafc9355e85dd288b5b5d1245f5",
+                "reference": "a425a1071cb07bafc9355e85dd288b5b5d1245f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "satooshi/php-coveralls": "0.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EndyJasmi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Endy Jasmi",
+                    "email": "endyjasmi@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Cuid php port",
+            "keywords": [
+                "UID",
+                "cuid",
+                "guid",
+                "id",
+                "uuid"
+            ],
+            "support": {
+                "email": "endyjasmi@gmail.com",
+                "issues": "https://github.com/endyjasmi/cuid/issues",
+                "source": "https://github.com/endyjasmi/cuid"
+            },
+            "time": "2020-01-02T02:46:25+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -5444,6 +5498,64 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+        },
+        {
+            "name": "webpatser/laravel-uuid",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/laravel-uuid.git",
+                "reference": "df92ebbc5ea71ee9e0d6e2861178be42ef7eb330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/laravel-uuid/zipball/df92ebbc5ea71ee9e0d6e2861178be42ef7eb330",
+                "reference": "df92ebbc5ea71ee9e0d6e2861178be42ef7eb330",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webpatser\\Uuid\\UuidServiceProvider"
+                    ],
+                    "aliases": {
+                        "Uuid": "Webpatser\\Uuid\\Uuid"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webpatser\\Uuid\\": "src/Webpatser/Uuid/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Kempen",
+                    "email": "christoph@downsized.nl"
+                }
+            ],
+            "description": "Laravel package to generate and to validate a universally unique identifier (UUID) according to the RFC 4122 standard. Support for version 1, 3, 4 and 5 UUIDs are built-in.",
+            "homepage": "https://github.com/webpatser/laravel-uuid",
+            "keywords": [
+                "UUID RFC4122"
+            ],
+            "support": {
+                "issues": "https://github.com/webpatser/laravel-uuid/issues",
+                "source": "https://github.com/webpatser/laravel-uuid"
+            },
+            "time": "2021-03-09T07:19:24+00:00"
         }
     ],
     "packages-dev": [
