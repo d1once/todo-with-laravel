@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('todos', TodoController::class);
+
+Route::post('/register-user',[TodoController::class,'registerUser'])->name('register.user');

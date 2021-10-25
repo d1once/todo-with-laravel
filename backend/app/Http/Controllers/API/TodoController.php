@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Todo;
+use App\Models\User;
 
 class TodoController extends Controller
 {
@@ -73,5 +74,19 @@ class TodoController extends Controller
         //
         $todo = Todo::findOrFail($id);
         $todo->delete();
+    }
+
+    public function registerUser(Request $request)
+    {
+        // Validate::make()
+        $rules = $request->validate([
+                'name' => 'required',
+                'email' => 'required|email',
+                'password' => ['min:8','regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/',]
+            ]);
+        $rules['password'] = md5($rules['password']);
+
+
+        dd($rules);
     }
 }
